@@ -112,7 +112,7 @@ def conti():
         server.sendmail(mail,rmail,msg)         
         server.quit()
         restart_program()
-    root.after(wt*60,conti)
+    root.after(wt*60000,conti)
     
 
 
@@ -130,8 +130,9 @@ root.mainloop()
 """
 since its tkinter and we cant use whileloops, root.after makes another loop while the mainloops runs 
 so the program will update itself without freezing
+wt is the integer we enter, now since .after is is ms, we multiply it by 60000 so our entry will be per minutes
 """
-root.after(wt*60,conti)
+root.after(wt*60000,conti)
 
 
 
