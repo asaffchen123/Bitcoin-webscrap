@@ -100,7 +100,7 @@ def conti():
     label3.config(text=("Current price is:",price2))
     
     URL="https://cointelegraph.com/bitcoin-price-index"
-    if pricer[0] != pricen[0]: 
+    if pricer[0] <= pricen[0]: 
         server = smtplib.SMTP('smtp.gmail.com',587)                     
         server.ehlo()
         server.starttls()
