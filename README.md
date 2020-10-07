@@ -1,5 +1,4 @@
-# web-scraper
-
+#Bitcoin web scrapper
 in order for the program to work u gonna have to make you own "secret.py" file
 mail="your mail"
 password="that mail password"
